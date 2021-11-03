@@ -1,6 +1,8 @@
 #ifndef CAT_H
 #define CAT_H
 
+#include <stdbool.h>
+
 class Cat
 {
     private:
