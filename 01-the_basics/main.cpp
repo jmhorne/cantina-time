@@ -1,16 +1,34 @@
 #include <iostream>
-#include "Car.h"
-
-using namespace std;
+#include "Cat.h"
 
 int
 main (void)
 {
-    Car car1 = Car();
-    Car car2 = Car(20);
+    Cat cat = Cat();
 
-    cout << "Car 1 mileage:" << car1.get_mileage() << endl;
-    cout << "Car 2 mileage:" << car2.get_mileage() << endl;
+    std::cout << "\nYou've created a new cat.\n\n";
+
+    while (!cat.is_happy())
+    {
+        std::cout << "Playing with cat to make it happy\n";
+        cat.play();
+    }
+
+    std::cout << "Cat is happy\n\n";
+
+    while (cat.is_hungry())
+    {
+        std::cout << "Cat is hungry. Feeding cat\n";
+        cat.feed();
+    }
+
+    std::cout << "Cat is full\n\n";
+
+    while (cat.is_sleepy())
+    {
+        std::cout << "Cat is sleeping\n";
+        cat.sleep();
+    }
 
     return 0;
 }

@@ -1,5 +1,5 @@
 Car:
-	g++ Car.cpp main.cpp -o Car
+	g++ Cat.cpp main.cpp -o Cat
 
 clean:
-	rm Car
+	rm Cat
