@@ -1,5 +1,5 @@
 Car:
-	g++ Cat.cpp main.cpp -o Cat
+	g++ Puma.cpp Cat.cpp main.cpp -o Cat
 
 clean:
 	rm Cat
